@@ -16,7 +16,7 @@ MODELS_GOOGLE_DRIVE = os.getenv("MODELS_GOOGLE_DRIVE")
 @st.cache_resource
 def prepare_models():
     # Run models downloader
-    download_files(MODELS_GOOGLE_DRIVE, './src/models')
+    download_files(MODELS_GOOGLE_DRIVE, 'src/models')
     
 prepare_models()
 
@@ -61,6 +61,5 @@ def video_frame_callback(frame):
 
         # Return raw frame so stream does NOT freeze
         return frame
-    
     
 webrtc_streamer(key="example", video_frame_callback=video_frame_callback)

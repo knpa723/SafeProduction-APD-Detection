@@ -14,6 +14,9 @@ src/models/*.pt
 src/models/*.onnx
 src/models/*.h5
 
+#Test Video
+src/test_video/
+
 # Data
 
 # Notebook checkpoints

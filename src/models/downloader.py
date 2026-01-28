@@ -3,7 +3,7 @@ import shutil
 import gdown
 import hashlib
 
-def download_files(url: str, destination: str = "./src/models"):
+def download_files(url: str, destination: str = "src/models"):
     temp_directory = os.path.join(destination, "__temp_gdown__")
     
     gdown.download_folder(
